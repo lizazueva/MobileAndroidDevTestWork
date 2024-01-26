@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.ntpro.mobileandroiddevtestwork.app-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "com.ntpro.mobileandroiddevtestwork.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.ntpro.mobileandroiddevtestwork.app-mergeDebugResources-30:/layout/item_deal.xml",
+        "source": "com.ntpro.mobileandroiddevtestwork.app-main-33:/layout/item_deal.xml"
+    },
+    {
+        "merged": "com.ntpro.mobileandroiddevtestwork.app-mergeDebugResources-30:/layout/bottom_sheet_sort.xml",
+        "source": "com.ntpro.mobileandroiddevtestwork.app-main-33:/layout/bottom_sheet_sort.xml"
+    }
+]

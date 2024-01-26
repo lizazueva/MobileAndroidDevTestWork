@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MobileAndroidDevTestWork</string>
+    <string name="buttom_sort">Сортировать по: %s</string>
+    <string name="row_date_of_change">Дата изменения сделки</string>
+    <string name="row_name">Имя инструмента</string>
+    <string name="row_price">Цена сделки</string>
+    <string name="row_volume">Объем сделки</string>
+    <string name="row_party">Cторона сделки</string>
+</resources>
