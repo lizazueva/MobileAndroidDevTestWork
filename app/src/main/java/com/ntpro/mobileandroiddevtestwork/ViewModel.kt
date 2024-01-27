@@ -24,7 +24,7 @@ class ViewModel : ViewModel() {
 
     private fun subscribeToDeals() {
         server.subscribeToDeals { newDeals ->
-            viewModelScope.launch(Dispatchers.Default) {
+            viewModelScope.launch(Dispatchers.Default){
                 synchronized(_deals) {
                     _deals.addAll(newDeals)
                     sortDeals(currentSortField, currentSortOrder)
@@ -40,7 +40,6 @@ class ViewModel : ViewModel() {
      * @param currentSortOrder Текущий порядок сортировки (ASCENDING или DESCENDING)
      */
     private fun sortDeals(sortField: String, currentSortOrder: SortOrder) {
-        viewModelScope.launch(Dispatchers.Default) {
             val sortedDeals = when (sortField) {
                 "Дата изменения сделки" -> _deals.sortedBy { it.timeStamp }
                 "Имя инструмента" -> _deals.sortedBy { it.instrumentName }
@@ -54,10 +53,7 @@ class ViewModel : ViewModel() {
             } else {
                 sortedDeals.reversed().take(maxDealsCount)
             }
-            synchronized(_deals) {
                 _sortedDeals.postValue(slicedDeals)
-            }
-        }
     }
 
     /**

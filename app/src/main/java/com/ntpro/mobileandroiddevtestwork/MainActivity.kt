@@ -36,8 +36,7 @@ class MainActivity : AppCompatActivity() {
      */
     private fun observeViewModel() {
         viewModel.sortedDeals.observe(this) { deals ->
-            adapterDeal.differ.submitList(deals)
-            binding.recyclerDeal.scrollToPosition(0)
+            adapterDeal.submitList(deals)
         }
     }
 
